@@ -13,7 +13,7 @@
 - [x] Z-012 Сводный инвентарь: что совпадает, что кандидат в библиотеку → `audit/inventory.md`
 
 ## Этап 2 — spec
-- [ ] Z-020 Ретро-spec Ular по шаблонам `templates/spec/`
+- [x] Z-020 Ретро-spec Ular по шаблонам `templates/spec/` → `spec/ular/` (site.md + 10 секций); открытые вопросы помечены `TODO(human)`
 - [ ] Z-021 Ретро-spec Spadafy
 - [ ] Z-022 Уточнить шаблоны spec по итогам двух проектов
 
