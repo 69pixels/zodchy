@@ -14,7 +14,7 @@
 
 ## Этап 2 — spec
 - [x] Z-020 Ретро-spec Ular по шаблонам `templates/spec/` → `spec/ular/` (site.md + 10 секций); открытые вопросы помечены `TODO(human)`
-- [ ] Z-021 Ретро-spec Spadafy
+- [x] Z-021 Ретро-spec Spadafy → `spec/spadafy/` (site.md + 12 секций); мобильные макеты и id Figma — `TODO(human)`
 - [ ] Z-022 Уточнить шаблоны spec по итогам двух проектов
 
 ## Этап 3 — стартер v0
