@@ -4,7 +4,7 @@
 
 ## Этап 0 — запуск
 - [x] Z-001 Создать репозиторий `zodchy` в GitHub студии, запушить этот каркас
-- [ ] Z-002 Подключить репозитории Ular и Spadafy (read) к сессии
+- [x] Z-002 Подключить репозитории Ular и Spadafy (read) к сессии — клоны в `../ular` (последняя версия: `home-v8/`) и `../spadafy` (последняя версия: `prototype-v2/`); репозитории: github.com/69pixels/ular, github.com/69pixels/spadafy
 - [ ] Z-003 Закрыть открытые вопросы из `docs/HANDOFF.md`
 
 ## Этап 1 — аудит
