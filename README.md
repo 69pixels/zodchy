@@ -11,32 +11,41 @@
 - Каждый проект пополняет общую библиотеку секций и анимаций.
 - Любая правка откатывается (git), любая версия доступна по preview-ссылке.
 
-## Структура (целевая)
+## Структура
 
 ```
 zodchy/
 ├── AGENTS.md            # правила для всех агентов (источник истины)
 ├── CLAUDE.md            # импортирует AGENTS.md + специфика Claude Code
+├── DECISIONS.md         # решения по системе (по проектам — spec/<проект>/DECISIONS.md)
 ├── docs/
 │   ├── HANDOFF.md       # контекст и решения, с которых начат проект
 │   └── process.md       # пайплайн этапов (появится после пилота)
-├── templates/
-│   └── spec/            # шаблоны spec для новых проектов
-├── backlog/
-│   └── BACKLOG.md       # задачи по развитию самой системы
-└── starter/             # Astro-стартер (появится на этапе 3)
-    ├── tokens/          # wireframe.css, brand.css (из Graphical)
+├── backlog/BACKLOG.md   # задачи по развитию самой системы
+├── templates/spec/      # шаблоны spec для новых проектов
+├── audit/               # аудиты Ular и Spadafy, сводный inventory.md   (+ AGENTS.md)
+├── design/              # кэш Figma по проектам                          (+ AGENTS.md)
+├── spec/                # ретро-spec проектов: site.md + sections/       (+ AGENTS.md)
+│   ├── ular/
+│   └── spadafy/
+└── starter/             # Astro-стартер (этап 3)
+    ├── theme-graphical/ # тема Graphical: GUI.md, компоненты, навыки
+    ├── tokens/          # wireframe.css, brand.css (появится)
     ├── src/ui/          # атомы: Graphical / Base UI (React-острова)
     ├── src/sections/    # библиотека секций с вариантами
-    ├── src/motion/      # библиотека анимаций-пресетов
+    ├── src/motion/      # пресеты анимаций (GSAP + ScrollTrigger)
     └── src/pages/_library.astro   # каталог секций и анимаций
 ```
 
+`audit/`, `design/` и `spec/<проект>` — переходное размещение: по принципу «один репозиторий на проект» они переезжают в репозитории проектов при старте стартера (Z-030). Вложенные `AGENTS.md` содержат локальные правила папок; роли агентов — в корневом `AGENTS.md`.
+
 ## Пилотные проекты
 
-- **Ular** — прошёл этап прототипа, сейчас дизайн.
-- **Spadafy** — прошёл этап прототипа, сейчас дизайн.
+- **Ular** — пилот. Дизайн утверждён, есть мобильная версия, на согласовании у клиента. RU + KK + EN.
+- **Spadafy** — проверка переиспользуемости после утверждения десктопного дизайна. EN.
+
+Состояние: этап 0 и 1 (аудит) и 2 (ретро-spec) закончены; следующий — этап 3, стартер v0 (`backlog/BACKLOG.md`).
 
 ## Стек
 
-Astro · React-острова для интерактивных атомов · Graphical (Base UI + конструктор темы) · GSAP/ScrollTrigger или Motion + CSS scroll-driven animations · View Transitions · Playwright для QA · preview-деплои на ветку.
+Astro · React-острова для интерактивных атомов · Graphical (Base UI + конструктор темы) · GSAP + ScrollTrigger (простые reveal — CSS) · View Transitions · Playwright для QA · preview-деплои на ветку.

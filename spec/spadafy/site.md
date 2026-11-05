@@ -13,7 +13,7 @@
 - Figma: `jgzJ9a3LPi61XRveiu2csk`; рабочая раскадровка главной — узел `996:3363` (страница «Main Design Pavel 🤝 Vadim», `599:2180`); страница «The tech» — `991:2713`. Остальные страницы: Website Anatomy, Prototype Exploration, Prototype WIP, Design.
 - Код прототипа: `github.com/69pixels/spadafy`, `prototype-v2/`. Аудит: `audit/spadafy.md`. Скриншот: `design/spadafy/`.
 - Бренд-материалы: логотип и знак S (SVG), фото команды, услуг, care.
-- Тема Graphical: `zodchy-theme/` для атомов; бренд-токены — отдельный слой.
+- Тема Graphical: `starter/theme-graphical/` для атомов; бренд-токены — отдельный слой.
 
 ## Стадия
 `hi-fi` (дизайн на согласовании, прототип = референс поведения).

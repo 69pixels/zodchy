@@ -1,6 +1,6 @@
 # Сводный инвентарь Ular × Spadafy (Z-012)
 
-Дата: 2026-11-05. Основа: `audit/ular.md`, `audit/spadafy.md`, тема Graphical (`zodchy-theme/`). Это входные данные для стартера v0 (этап 3) и ретро-spec (этап 2).
+Дата: 2026-11-05. Основа: `audit/ular.md`, `audit/spadafy.md`, тема Graphical (`starter/theme-graphical/`). Это входные данные для стартера v0 (этап 3) и ретро-spec (этап 2).
 
 Контекст проектов:
 
@@ -35,7 +35,7 @@
 | Показатели («число + подпись») | 3 реализации (`about-stats`, `stats`, `panel-stat`) | в тексте карточек | атом `stat` | P1 |
 | Вкладки (ARIA, стрелки/Home/End) | 3 вида (values, companies, map) | пилюля меню, полосы отзывов | атом `tabs` из Graphical с вариантами оформления; общая клавиатурная логика уже есть в `wireTabs` | P0 |
 
-Что решает тема Graphical: `button`, `tabs`, `dialog`, `drawer`, `field`/`input`/`form`, `popover`, `navigation-menu`, `accordion`, `toast`, `progress`, `separator`, `tooltip` и др. (список из `zodchy-theme/gui/components/zodchy/`). Но тема сгенерирована со шрифтом Inter и нейтральными токенами, брендовые шрифты и цвета проектов — отдельный слой (`brand`-тема).
+Что решает тема Graphical: `button`, `tabs`, `dialog`, `drawer`, `field`/`input`/`form`, `popover`, `navigation-menu`, `accordion`, `toast`, `progress`, `separator`, `tooltip` и др. (список из `starter/theme-graphical/gui/components/zodchy/`). Но тема сгенерирована со шрифтом Inter и нейтральными токенами, брендовые шрифты и цвета проектов — отдельный слой (`brand`-тема).
 
 ## 2. Различия (остаются проектным слоем)
 

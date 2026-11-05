@@ -15,14 +15,20 @@
 ## Этап 2 — spec
 - [x] Z-020 Ретро-spec Ular по шаблонам `templates/spec/` → `spec/ular/` (site.md + 10 секций); открытые вопросы помечены `TODO(human)`
 - [x] Z-021 Ретро-spec Spadafy → `spec/spadafy/` (site.md + 12 секций); мобильные макеты и id Figma — `TODO(human)`
-- [ ] Z-022 Уточнить шаблоны spec по итогам двух проектов
+- [x] Z-022 Уточнить шаблоны spec по итогам двух проектов (добавлены «Языки», «Токены», «Доступность»)
 
 ## Этап 3 — стартер v0
-- [ ] Z-030 Astro-каркас `starter/`: токены wireframe + brand, подключение темы Graphical
-- [ ] Z-031 Первые секции библиотеки из инвентаря (с README и preview)
-- [ ] Z-032 Первые пресеты анимаций + reduced motion
+Подготовка базы (решения приняты, см. `DECISIONS.md`):
+- [ ] Z-029 Решить размещение проектов: отдельный Astro-репозиторий `ular` из стартера; перенести в него `spec/ular`, `audit/ular.md`, `design/ular` (и аналогично для Spadafy позже)
+- [ ] Z-028 Создать `.claude/agents/` и описания ролей Extractor / Section builder / Motion для Codex (нейтральный markdown), по необходимости на этом этапе
+
+Стартер:
+- [ ] Z-030 Astro-каркас `starter/`: токены wireframe + brand (Ular), подключение темы Graphical (`starter/theme-graphical`), i18n-каркас RU/KK/EN
+- [ ] Z-031 Первые секции библиотеки из `audit/inventory.md` (первая очередь, с README и preview)
+- [ ] Z-032 Первые пресеты анимаций (GSAP + ScrollTrigger) + reduced motion; ядро `scroll-pin` спроектировать один раз (параметры: высота трека, фазы, источник прогресса)
 - [ ] Z-033 Каталог `/library`
 - [ ] Z-034 Review-панель для переключения вариантов секций
+- [ ] Z-035 GitHub Actions: сборка + превью (Pages сейчас, Cloudflare Pages к пилоту)
 
 ## Этап 4 — пилот
 - [ ] Z-040 Вёрстка пилотного проекта на стартере, preview-деплой на ветку

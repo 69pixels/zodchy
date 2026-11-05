@@ -46,7 +46,7 @@
 - [x] Ближе к утверждению дизайна — **Ular**: дизайн утверждён с мелкими правками, обновлённая версия отправлена клиенту, есть мобильная версия. Значит, Ular — кандидат в пилот, Spadafy проверяет переиспользуемость стартера.
 - [x] Figma: Spadafy — https://www.figma.com/design/jgzJ9a3LPi61XRveiu2csk/Spadafy-%7C-Work?node-id=996-3363 · Ular — https://www.figma.com/design/mxW7Nq12NwWE4bCToR5ztq/ULAR-%7C-Work?node-id=2888-928
 - [x] Код: Ular — `github.com/69pixels/ular`, папка `home-v8/`; Spadafy — `github.com/69pixels/spadafy`, папка `prototype-v2/`. Локальные клоны лежат рядом с `zodchy/`.
-- [x] Тема Graphical: сгенерирована, лежит в `../zodchy-theme/` (`GUI.md`, `gui/`, `skills/`). Graphical до этого в проектах не использовали.
+- [x] Тема Graphical: сгенерирована, лежит в `starter/theme-graphical/` (`GUI.md`, `gui/`, `skills/`). Graphical до этого в проектах не использовали.
 - [x] Хостинг preview: сейчас GitHub Pages без отдельного хостинга. **Решено:** GitHub Pages для первых превью, к пилоту (Ular) — Cloudflare Pages.
 - [x] Бэклог — **решено: GitHub Issues.**
 - [x] Библиотека анимаций — **решено: GSAP + ScrollTrigger** (простые reveal — CSS/IntersectionObserver).
