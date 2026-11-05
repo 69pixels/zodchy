@@ -47,11 +47,11 @@
 - [x] Figma: Spadafy — https://www.figma.com/design/jgzJ9a3LPi61XRveiu2csk/Spadafy-%7C-Work?node-id=996-3363 · Ular — https://www.figma.com/design/mxW7Nq12NwWE4bCToR5ztq/ULAR-%7C-Work?node-id=2888-928
 - [x] Код: Ular — `github.com/69pixels/ular`, папка `home-v8/`; Spadafy — `github.com/69pixels/spadafy`, папка `prototype-v2/`. Локальные клоны лежат рядом с `zodchy/`.
 - [x] Тема Graphical: сгенерирована, лежит в `../zodchy-theme/` (`GUI.md`, `gui/`, `skills/`). Graphical до этого в проектах не использовали.
-- [x] Хостинг preview: сейчас GitHub Pages без отдельного хостинга. Решение по Cloudflare Pages — на согласовании (см. рекомендации).
-- [x] Бэклог — рекомендация: GitHub Issues.
-- [x] Библиотека анимаций — рекомендация: GSAP + ScrollTrigger.
+- [x] Хостинг preview: сейчас GitHub Pages без отдельного хостинга. **Решено:** GitHub Pages для первых превью, к пилоту (Ular) — Cloudflare Pages.
+- [x] Бэклог — **решено: GitHub Issues.**
+- [x] Библиотека анимаций — **решено: GSAP + ScrollTrigger** (простые reveal — CSS/IntersectionObserver).
 
-## Рекомендации (ждут подтверждения)
+## Обоснование решений (подтверждено 05.11.2026)
 
 - **Бэклог → GitHub Issues.** Репозитории уже на GitHub, задачи связываются с ветками и PR, агенты (Claude Code, Codex) работают с ними через `gh`. Linear имеет смысл, если нужны клиентские/продуктовые доски, чего пока нет.
 - **Анимации → GSAP + ScrollTrigger.** Секции Astro в основном без React, а пресеты подключаются атрибутами `data-motion` — это ванильный JS, где GSAP на месте. Motion заточен под React-компоненты. Простые reveal'ы — на CSS/IntersectionObserver, GSAP только для таймлайнов и скролл-сцен.
@@ -59,7 +59,6 @@
 
 ## Всё ещё открыто
 
-- [ ] Подтвердить три рекомендации выше.
 - [ ] Авторизовать Figma MCP (`/mcp`) для аудита.
 
 ## Команда и инструменты
